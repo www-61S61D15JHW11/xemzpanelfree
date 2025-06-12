@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Server Gratis | Kocheng's</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      overflow-x: hidden;
+      background-color: #f9fafb;
+    }
+
+    video.bg-video {
+      position: fixed;
+      right: 0; bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(255,255,255,0.85);
+      z-index: -1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      align-items: center;
+      animation: slideDown 1s ease;
+    }
+
+    header img {
+      height: 32px;
+      animation: rotateIn 1s ease;
+    }
+
+    header .lang {
+      font-weight: 500;
+      color: #374151;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      animation: fadeInUp 1.5s ease;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      color: #4b5563;
+      margin-bottom: 1.5rem;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .buttons a {
+      padding: 0.7rem 1.5rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .buttons a.get-started {
+      background-color: #2563eb;
+      color: white;
+    }
+
+    .buttons a.get-started:hover {
+      background-color: #1e40af;
+      transform: scale(1.05);
+    }
+
+    .buttons a.support {
+      border: 2px solid #2563eb;
+      color: #2563eb;
+    }
+
+    .buttons a.support:hover {
+      background-color: #2563eb;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .specs {
+      text-align: center;
+      margin-top: 3rem;
+      animation: fadeInUp 2s ease;
+    }
+
+    .specs h2 {
+      font-size: 1.5rem;
+      color: #1e3a8a;
+      margin-bottom: 1.2rem;
+    }
+
+    .spec-box {
+      background: #e0ecff;
+      margin: 0.5rem auto;
+      max-width: 380px;
+      padding: 1rem;
+      border-radius: 12px;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      animation: scaleIn 1.2s ease;
+    }
+
+    .spec-box i {
+      font-style: normal;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #4b5563;
+      animation: fadeInUp 2s ease;
+    }
+
+    footer a {
+      color: #10b981;
+      text-decoration: none;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes rotateIn {
+      from { transform: rotate(-180deg); opacity: 0; }
+      to { transform: rotate(0); opacity: 1; }
+    }
+
+    @keyframes scaleIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @media screen and (max-width: 480px) {
+      .buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="bg-video">
+    <source src="https://files.catbox.moe/2u55cc.mp4" type="video/mp4">
+    Browser anda tidak mendukung video.
+  </video>
+  <div class="overlay"></div>
+
+  <!-- Header -->
+  <header>
+    <img src="https://files.catbox.moe/3p8ccl.png" alt="Logo">
+    <div class="lang">ID</div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Powerful servers for cheap.</h1>
+    <p>Mulai sekarang secara gratis. Tidak ada tipu-tipu.</p>
+    <div class="buttons">
+      <a class="get-started" href="https://linkmu.com" target="_blank">Get Started</a>
+      <a class="support" href="https://t.me/telegrammu" target="_blank">Support</a>
+    </div>
+  </section>
+
+  <!-- Spesifikasi -->
+  <section class="specs">
+    <h2>Spesifikasi Panel Gratis</h2>
+    <div class="spec-box"><i>🧠</i> 2000 RAM</div>
+    <div class="spec-box"><i>💾</i> 2000 DISK</div>
+    <div class="spec-box"><i>⚙️</i> 100% CPU</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Xemz Hosting</strong></p>
+    <p>🎵 TikTok: @zarrxhost</p>
+    <p>📞 WhatsApp: <a href="https://wa.me/6283140234299">+62831-4023-4299</a></p>
+  </footer>
+
+</body>
+</html>
